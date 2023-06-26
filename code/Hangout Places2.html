@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- icon -->
+    <link rel="icon" href="../img/Logo.png" />
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- link font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Kaushan+Script&family=Libre+Franklin&family=Roboto&family=Roboto+Condensed&family=Sofia+Sans+Condensed:ital,wght@1,500&display=swap" rel="stylesheet">
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Hangeout Project</title>
+  </head>
+  <body>
+    <header>
+      <div class="">
+        <nav class="navbar navbar-expand-lg   navbar-light fixed-top " style="background: white;box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);">
+          <div class="container">
+            <a href="index.html">
+              <img src="../img/Logo Hangout.png" alt="" width="191" class="d-inline-block align-text-top">
+            </a>
+            <button class=" mx-4 navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto py-4">
+                <li class="nav-item mx-1"  >
+                  <a class="nav-link  "  aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item mx-1">
+                  <a class="nav-link  "     href="../code/updates.html">Updates</a>
+                </li>
+                <li class="nav-item mx-1">
+                  <a class="nav-link  "   href="../code/agenda.html">Agenda</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style=" color: #EC5D71;">
+                    Hangout Places
+                  </a>
+                  <ul  class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item my-1" href="../code/Hangout Places1.html">Food and Beverage</a></li>
+                    <li><a class="dropdown-item my-1" href="../code/Hangout Places2.html">Another action</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item mx-1">
+                  <a class="nav-link " href="../code/community.html" >Community</a>
+                </li>
+                <li class="nav-item mx-1">
+                  <a class="nav-link " href="../code/activitymanajemen.html"   >Activity Manajemen</a>
+                </li>
+                <li class="nav-item mx-1">
+                  <a class="nav-link" href="../code/about.html">About Us</a>
+                </li>
+                <div>
+                  <button class="button-primary mx-1">Sign Up</button>
+                  <button class="button-secundary mx-1">Sign In</button>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+    <br><br><br><br><br>
+    <section style="margin-top: -20px;">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-3" style=" padding: 40px;border-right: 1px solid rgba(86, 86, 86, 0.5);
+          transform: rotate(0.04deg);">
+            <h5 class="by">Sort By</h5>
+            <h3 class="lo">Location</h3>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Provinsi</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Input Provinsi">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Kota/Kabupaten</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Input Kota/Kabupaten">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Kecamatan</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Input Kecamatan">
+            </div>
+            <div>
+              <h3 class="lo">Price</h3>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  <= Rp. 50.000
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Rp. 50.000 - Rp. 100.000
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  >= Rp. 101.000
+                </label>
+              </div>
+              
+            </div>
+            
+            <div class="py-3">
+              <h3 class="lo">Facility</h3>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Smooking Room
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Swimming Pool
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Restaurant
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Coffe Shop
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Wi-Fi
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Wedding Services
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Rooftop Teracce
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-9" style="margin-top: 40px;">
+            <h3 class="food">Lodging</h3>
+            <p class="ji">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div id="outer-grid5">
+              <div class="card-2 py-2">
+                <div class="card5 fr1" >
+                    <div>
+                      <img class="gmbar" width="100%"  src="../img/36.png"  alt="...">
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <h5 class="poi py-2">Lorem Ipsum</h5>
+                        <p class="bi bi-geo-alt-fill io" >1.0km</p>
+                        <p class="tempat">Depok, Jawa Barat</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="bi bi-star-fill poi py-2">4.8</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-2 py-2">
+                <div class="card5 fr1" >
+                    <div>
+                      <img class="gmbar" width="100%"  src="../img/37.png"  alt="...">
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <h5 class="poi py-2">Lorem Ipsum</h5>
+                        <p class="bi bi-geo-alt-fill io" >1.0km</p>
+                        <p class="tempat">Depok, Jawa Barat</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="bi bi-star-fill poi py-2">4.8</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-2 py-2">
+                <div class="card5 fr1" >
+                    <div>
+                      <img class="gmbar" width="100%"  src="../img/38.png"  alt="...">
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <h5 class="poi py-2">Lorem Ipsum</h5>
+                        <p class="bi bi-geo-alt-fill io" >1.0km</p>
+                        <p class="tempat">Depok, Jawa Barat</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="bi bi-star-fill poi py-2">4.8</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-2 py-2">
+                <div class="card5 fr1" >
+                    <div>
+                      <img class="gmbar" width="100%"  src="../img/39.png"  alt="...">
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <h5 class="poi py-2">Lorem Ipsum</h5>
+                        <p class="bi bi-geo-alt-fill io" >1.0km</p>
+                        <p class="tempat">Depok, Jawa Barat</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="bi bi-star-fill poi py-2">4.8</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-2 py-2">
+                <div class="card5 fr1" >
+                    <div>
+                      <img class="gmbar" width="100%"  src="../img/40.png"  alt="...">
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <h5 class="poi py-2">Lorem Ipsum</h5>
+                        <p class="bi bi-geo-alt-fill io" >1.0km</p>
+                        <p class="tempat">Depok, Jawa Barat</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="bi bi-star-fill poi py-2">4.8</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-2 py-2">
+                <div class="card5 fr1" >
+                    <div>
+                      <img class="gmbar" width="100%"  src="../img/41.png"  alt="...">
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <h5 class="poi py-2">Lorem Ipsum</h5>
+                        <p class="bi bi-geo-alt-fill io" >1.0km</p>
+                        <p class="tempat">Depok, Jawa Barat</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="bi bi-star-fill poi py-2">4.8</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-2 py-2">
+                <div class="card5 fr1" >
+                    <div>
+                      <img class="gmbar" width="100%"  src="../img/42.png"  alt="...">
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <h5 class="poi py-2">Lorem Ipsum</h5>
+                        <p class="bi bi-geo-alt-fill io" >1.0km</p>
+                        <p class="tempat">Depok, Jawa Barat</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="bi bi-star-fill poi py-2">4.8</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-2 py-2">
+                <div class="card5 fr1" >
+                    <div>
+                      <img class="gmbar" width="100%"  src="../img/43.png"  alt="...">
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <h5 class="poi py-2">Lorem Ipsum</h5>
+                        <p class="bi bi-geo-alt-fill io" >1.0km</p>
+                        <p class="tempat">Depok, Jawa Barat</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="bi bi-star-fill poi py-2">4.8</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-2 py-2">
+                <div class="card5 fr1" >
+                    <div>
+                      <img class="gmbar" width="100%"  src="../img/44.png"  alt="...">
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <h5 class="poi py-2">Lorem Ipsum</h5>
+                        <p class="bi bi-geo-alt-fill io" >1.0km</p>
+                        <p class="tempat">Depok, Jawa Barat</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="bi bi-star-fill poi py-2">4.8</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-2 py-2">
+                <div class="card5 fr1" >
+                    <div>
+                      <img class="gmbar" width="100%"  src="../img/45.png"  alt="...">
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <h5 class="poi py-2">Lorem Ipsum</h5>
+                        <p class="bi bi-geo-alt-fill io" >1.0km</p>
+                        <p class="tempat">Depok, Jawa Barat</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="bi bi-star-fill poi py-2">4.8</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-2 py-2">
+                <div class="card5 fr1" >
+                    <div>
+                      <img class="gmbar" width="100%"  src="../img/46.png"  alt="...">
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <h5 class="poi py-2">Lorem Ipsum</h5>
+                        <p class="bi bi-geo-alt-fill io" >1.0km</p>
+                        <p class="tempat">Depok, Jawa Barat</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="bi bi-star-fill poi py-2">4.8</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-2 py-2">
+                <div class="card5 fr1" >
+                    <div>
+                      <img class="gmbar" width="100%"  src="../img/47.png"  alt="...">
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <h5 class="poi py-2">Lorem Ipsum</h5>
+                        <p class="bi bi-geo-alt-fill io" >1.0km</p>
+                        <p class="tempat">Depok, Jawa Barat</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="bi bi-star-fill poi py-2">4.8</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-2 py-2">
+                <div class="card5 fr1" >
+                    <div>
+                      <img class="gmbar" width="100%"  src="../img/48.png"  alt="...">
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <h5 class="poi py-2">Lorem Ipsum</h5>
+                        <p class="bi bi-geo-alt-fill io" >1.0km</p>
+                        <p class="tempat">Depok, Jawa Barat</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="bi bi-star-fill poi py-2">4.8</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-2 py-2">
+                <div class="card5 fr1" >
+                    <div>
+                      <img class="gmbar" width="100%"  src="../img/49.png"  alt="...">
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <h5 class="poi py-2">Lorem Ipsum</h5>
+                        <p class="bi bi-geo-alt-fill io" >1.0km</p>
+                        <p class="tempat">Depok, Jawa Barat</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="bi bi-star-fill poi py-2">4.8</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-2 py-2">
+                <div class="card5 fr1" >
+                    <div>
+                      <img class="gmbar" width="100%"  src="../img/50.png"  alt="...">
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <h5 class="poi py-2">Lorem Ipsum</h5>
+                        <p class="bi bi-geo-alt-fill io" >1.0km</p>
+                        <p class="tempat">Depok, Jawa Barat</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="bi bi-star-fill poi py-2">4.8</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="card-2 py-2">
+                <div class="card5 fr1" >
+                    <div>
+                      <img class="gmbar" width="100%"  src="../img/51.png"  alt="...">
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <h5 class="poi py-2">Lorem Ipsum</h5>
+                        <p class="bi bi-geo-alt-fill io" >1.0km</p>
+                        <p class="tempat">Depok, Jawa Barat</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="bi bi-star-fill poi py-2">4.8</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-39201">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 mb-4 mb-md-0">
+            <h3>About Us</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="#">About Hangout Project</a></li>
+              <li><a href="#">Founder</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Portofolio</a></li>
+              <li><a href="#">Galery</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-4 mb-md-0">
+            <h3>Agenda</h3>
+            <ul class="list-unstyled nav-links">
+              <div class="row">
+                <div class="col-6">
+                  <li><a href="#">Januari</a></li>
+                  <li><a href="#">February</a></li>
+                  <li><a href="#">March</a></li>
+                  <li><a href="#">April</a></li>
+                  <li><a href="#">May</a></li>
+                  <li><a href="#">June</a></li>
+                </div>
+                <div class="col-6">
+                  <li><a href="#">July</a></li>
+                  <li><a href="#">August</a></li>
+                  <li><a href="#">September</a></li>
+                  <li><a href="#">October</a></li>
+                  <li><a href="#">November</a></li>
+                  <li><a href="#">Desember</a></li>
+                </div>
+              </div>
+              
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-4 mb-md-0">
+            <h3>Hangout Places</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="#">Food and Beverage</a></li>
+              <li><a href="#">Lodging</a></li>
+
+            </ul>
+          </div>
+          <div class="col-lg-3 mb-4 mb-md-0 ">
+            <h3>Our Social Media</h3>
+            <ul class="list-unstyled nav-links">
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Tiktok</a></li>
+              <li><a href="#">Youtube</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-12">
+            <div class="border-top my-5"></div>
+          </div>
+          <div class="col-md-6">
+            <p><small>© 2023 Hangout Project  // Created by Spero.id</small></p>
+          </div>
+          <div class="col-md-6 text-end text-md-right">
+            <p><small>Terms & Condition - Privacy - Cookies</small></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- AKHIR FOOTER -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        centeredSlides:'true',
+        spaceBetween: 25,
+        fade:'true',
+        gragCursor:'true',
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+          dynamicBullets:'true',
+
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        breakpoints:{
+          0: {
+            slidesPerView:1,
+          },
+          520: {
+            slidesPerView:2,
+          },
+          950: {
+            slidesPerView:3,
+          },
+        },
+
+      });
+
+      var appendNumber = 4;
+      var prependNumber = 1;
+      document
+        .querySelector(".prepend-2-slides")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.prependSlide([
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
+          ]);
+        });
+      document
+        .querySelector(".prepend-slide")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.prependSlide(
+            '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
+          );
+        });
+      document
+        .querySelector(".append-slide")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.appendSlide(
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
+          );
+        });
+      document
+        .querySelector(".append-2-slides")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          swiper.appendSlide([
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+            '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
+          ]);
+        });
+    </script>
+  </body>
+</html>
+
+
