@@ -141,6 +141,13 @@ padding: 20px;
 color: #3D3D3D;
 
 }
+
+#outer-grid22 {
+  display: grid;
+  grid-template-columns: 1fr 1fr  1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
 .pl{
   font-family: 'Inter';
 font-style: normal;
@@ -530,10 +537,42 @@ h3{
       margin: 0 10px;
       font-size: 13px;
     }
+.button-band{
+    width: 101px;
+    background-color: #EC5D71;
+    color: white;
+    border: 1px solid #EC5D71;
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+.button-MC{
+  width: 101px;
+  background-color: #EC5D71;
+  color: white;
+  border: 1px solid #EC5D71;
+  border-radius: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
 
+.button-Sound{
+  width: 223px;
+  background-color: #EC5D71;
+  color: white;
+  border: 1px solid #EC5D71;
+  border-radius: 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
 .button-Concert{
   width: 60.4px;
-  height: 16.86px;
   background-color: #EC5D71;
   color: white;
   border: 1px solid #EC5D71 ;
@@ -560,7 +599,7 @@ h3{
 
 .button-Free{
   width: 60.4px;
-  height: 16.86px;
+  
   background-color: #EC5D71;
   color: white;
   border: 1px solid #EC5D71 ;
@@ -592,7 +631,7 @@ h5{
 font-family: 'Inter';
 font-style: normal;
 font-weight: 700;
-font-size: 15px;
+font-size: 14px;
 line-height: 18px;
 
 color: #000000;
